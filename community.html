@@ -8,20 +8,18 @@
     <title>About page</title>
   </head>
   <body>
-    <header></header>
-    <main>
+    <header>header</header>
+    <main class="community">
       
-      <h2>Our Mission</h2>
+     
       <section class="mission">
-   
-        <p>
-          Supporting local artists by being a platform where unique and diverse
-          art gets more accessible. To bring value to both artists and art
-          buyers by being a platform to unique art and linked artists.
+        <h2>Our Mission</h2>
+          <p>Plakat's main aim is to support and bolster local artists, from Copenhagen, as well as their art, by being a platform where unique and diverse art gets more accessible to admirers and allies.<br><br>In this way, we hope to positively bring value and a sense of affection to both artists and art lovers.
         </p>
-        <li><img src="berlin07.jpg" alt="" /></li>
-        <li><img src="berlin06.jpg" alt="" /></li>
+        <li><img src="imgs/berlin07.jpg" alt="" /></li>
+        <li><img src="imgs/berlin06.jpg" alt="" /></li>
       </section>
+      
     </article>
       <h2>Our Vision</h2>
       <section class="vision">
@@ -30,8 +28,8 @@
           art gets more accessible. To bring value to both artists and art
           buyers by being a platform to unique art and linked artists.
         </p>
-        <li><img src="berlin07.jpg" alt="" /></li>
-        <li><img src="berlin06.jpg" alt="" /></li>
+        <li><img src="imgs/berlin07.jpg" alt="" /></li>
+        <li><img src="imgs/berlin06.jpg" alt="" /></li>
       </section>
        
       
@@ -67,11 +65,45 @@
         together.<br/>
       </p>
       </article>
-      <li><img src="berlin06.jpg" alt="" /></li>
-     
-   
+      <li><img src="imgs/berlin06.jpg" alt="" /></li>
+
       </section>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides-fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="imgs/berlin08.jpg">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides-fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="imgs/berlin07.jpg">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides-fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="imgs/berlin06.jpg">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
     </main>
-    <footer></footer>
+    <footer>footer</footer>
+    <script src="community.js"></script>
   </body>
 </html>
+
