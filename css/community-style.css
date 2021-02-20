@@ -29,31 +29,112 @@ main {
 body {
   background-color: #f2efe6;
 }
-/* community */
+/* COMMUNITY */
 
-.overlapping img {
-  width: 50%;
+main {
+  padding: 5rem;
 }
-.overlapping {
+/* mission */
+.container1 h2 {
+  margin-left: 14rem;
+  margin-bottom: -10rem;
+}
+.mission img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.mission {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
   margin: auto;
 }
-
-.overlapping p {
+.mission p {
   grid-row: 3 / span 2;
   grid-column: 1 / span 2;
   z-index: 2;
-  text-justify: right;
+  text-align: right;
+  padding: 3rem;
 }
-li:nth-child(2) {
+
+.mission li:nth-child(2) {
   grid-row: 2 / span 3;
   grid-column: 3 / span 3;
 }
-li:nth-child(3) {
+.mission li:nth-child(3) {
   grid-row: 4 / span 3;
   grid-column: 4 / span 2;
   z-index: 2;
+}
+
+/* vision */
+.vision img {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+.vision {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+.vision p {
+  grid-row: 4 / span 2;
+  grid-column: 3 / span 3;
+  z-index: 2;
+  text-justify: left;
+  width: 50%;
+  margin: auto;
+  padding: 8rem;
+}
+.vision li:nth-child(2) {
+  grid-row: 4 / span 3;
+  grid-column: 1 / span 3;
+}
+.vision li:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 3 / span 4;
+}
+
+/* values */
+.values img {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.values {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  margin: auto;
+}
+.values-container p h3 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+  z-index: 2;
+  margin: auto;
+  text-justify: right;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.values-container h3 {
+  text-align: right;
+  margin: 4rem 0rem 2rem auto;
+}
+.values-container p {
+  text-align: right;
+}
+.values li {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+  margin: auto;
+  display: block;
 }
