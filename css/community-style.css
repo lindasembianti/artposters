@@ -1,0 +1,59 @@
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+/* typography */
+h1 {
+  font-family: "Chonburi", cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+/* body general style */
+
+main {
+  margin: 15px;
+}
+
+body {
+  background-color: #f2efe6;
+}
+/* community */
+
+.overlapping img {
+  width: 50%;
+}
+.overlapping {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  margin: auto;
+}
+
+.overlapping p {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  z-index: 2;
+  text-justify: right;
+}
+li:nth-child(2) {
+  grid-row: 2 / span 3;
+  grid-column: 3 / span 3;
+}
+li:nth-child(3) {
+  grid-row: 4 / span 3;
+  grid-column: 4 / span 2;
+  z-index: 2;
+}
