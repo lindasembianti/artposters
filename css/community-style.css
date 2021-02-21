@@ -228,7 +228,7 @@ h2 {
   height: 80vh;
   margin-top: 30vh;
   position: relative;
-  left: 13rem;
+  /*! left: 10rem; */
 }
 
 /* fix container */
@@ -244,6 +244,7 @@ h2 {
   height: 900px;
   overflow: hidden;
   position: relative;
+  margin-left: 25%;
 }
 
 .box {
@@ -254,7 +255,7 @@ h2 {
   left: 0;
   overflow: hidden;
   transform: translate3d(0, -100%, 0);
-  animation: slide 20s linear infinite;
+  animation: slide 15s linear infinite;
   display: flex;
   align-items: center;
   justify-content: center;
