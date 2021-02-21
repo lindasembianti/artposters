@@ -89,10 +89,6 @@ header {
 main {
   padding: 5rem;
 }
-header {
-  height: 100px;
-  background-color: grey;
-}
 
 h2 {
   font-size: 40px;
