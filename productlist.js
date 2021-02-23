@@ -31,14 +31,14 @@ function showProduct(product) {
     ).textContent = `${product.artistname}`;
     document.querySelector(".postername").textContent = `${product.postername}`;
     document.querySelector(".style").textContent = `${product.style}`;
-    copy.querySelector(".kryds").addEventListener("click", function () {
-      document.querySelector(".popup_product").classList.add("hidden");
-    });
   });
   console.log(imgurl);
   const parent = document.querySelector("section");
   parent.appendChild(copy);
 }
+document.querySelector(".kryds").addEventListener("click", function () {
+  document.querySelector(".popup_product").classList.add("hidden");
+});
 
 {
 }
