@@ -23,25 +23,22 @@ function showProduct(product) {
   copy.querySelector(".artistname").textContent = `${product.artistname}`;
   const imgurl = mediaurl + product.posterimg[0];
   copy.querySelector(".productimage").src = imgurl;
+  copy.querySelector(".productimage").addEventListener("click", function () {
+    document.querySelector(".popup_product").classList.remove("hidden");
+    document.querySelector(".popup_product img").src = imgurl;
+    document.querySelector(
+      ".artistname2"
+    ).textContent = `${product.artistname}`;
+    document.querySelector(".postername").textContent = `${product.postername}`;
+    document.querySelector(".style").textContent = `${product.style}`;
+    copy.querySelector(".kryds").addEventListener("click", function () {
+      document.querySelector(".popup_product").classList.add("hidden");
+    });
+  });
   console.log(imgurl);
-  const parent = document.querySelector("main");
+  const parent = document.querySelector("section");
   parent.appendChild(copy);
 }
 
 {
-  /* <template id="postertemplate">
-          <article class="posters">
-            <div class="img_wrapper">
-              <img
-                class="productimage"
-                src="img/poster_example.jpg"
-                alt="Descripton here"
-              />
-            </div>
-
-            <h2 class="postername">Poster Name</h2>
-            <h3 class="artistname">Artist Name</h2>
-            <p class="style">Style</p>
-          </article>
-        </template> */
 }
