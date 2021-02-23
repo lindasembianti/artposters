@@ -13,8 +13,8 @@ h2 {
 }
 
 img {
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 300px;
+  max-width: 300px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
     rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
@@ -22,7 +22,7 @@ img {
 section {
   margin-top: 150px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px));
   justify-content: center;
   align-items: center;
 }
@@ -30,7 +30,7 @@ section {
 .posters {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
-  padding: 15%;
+  padding: 5%;
   padding-bottom: 40px;
 }
 
@@ -90,4 +90,32 @@ header {
 
 .links {
   margin-right: 5em;
+}
+
+.popup_product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.content img {
+  max-width: 200px;
+  min-width: auto;
+}
+
+.hidden {
+  display: none;
 }
