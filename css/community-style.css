@@ -1,0 +1,290 @@
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+/* typography */
+h1 {
+  font-family: "Chonburi", cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+/* BODY GENERAL STYLE */
+
+main {
+  margin: 15px;
+}
+
+body {
+  background-color: #f2efe6;
+}
+/* nav bar */
+
+li,
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color: grey;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 5em;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+.sociallink {
+  padding-right: 1em;
+  zoom: 2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.socialig {
+  zoom: 2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.links {
+  margin-right: 5em;
+}
+
+/* COMMUNITY */
+
+main {
+  padding: 5rem;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+/* mission */
+.mission h2 {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 3;
+  z-index: 1;
+  margin: auto;
+}
+.mission img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.mission {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  margin: 0 auto 150px auto;
+}
+.mission p {
+  grid-row: 4 / span 2;
+  grid-column: 1 / span 2;
+  z-index: 2;
+  text-align: right;
+  padding: 2rem;
+  margin: -10% -5% auto auto;
+  width: 70%;
+}
+.mission li:nth-child(4) {
+  grid-row: 4 / span 2;
+  grid-column: 3 / span 2;
+  margin-top: -17%;
+}
+
+.mission li:nth-child(3) {
+  grid-row: 1 / span 3;
+  grid-column: 4 / span 2;
+  z-index: 2;
+  margin-right: -5%;
+}
+
+/* vision */
+.vision img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+.vision {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  padding: 2rem;
+  margin: 150px auto 150px auto;
+}
+.vision h2 {
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 2;
+  z-index: 1;
+}
+
+.vision p {
+  grid-row: 2 / span 1;
+  grid-column: 4 / span 2;
+  z-index: 2;
+  text-justify: left;
+  width: 100%;
+  margin: auto;
+  padding-top: 20%;
+}
+.vision li:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+.vision li:nth-child(4) {
+  grid-row: 2 / span 2;
+  grid-column: 2 / span 2;
+  margin-left: -10%;
+  z-index: 2;
+}
+
+/* values */
+.community h2 {
+  text-align: center;
+  margin: 0px;
+}
+.values img {
+  width: 90%;
+  margin: auto;
+  display: block;
+}
+.values {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  margin: auto;
+  margin: 0px auto 150px auto;
+}
+.values-container p h3 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 1;
+  z-index: 2;
+  margin: auto;
+  text-justify: right;
+  padding: 2rem;
+  max-width: 80%;
+}
+
+.values-container h3 {
+  text-align: right;
+  margin: 4rem 0rem 2rem auto;
+}
+.values-container p {
+  text-align: right;
+}
+.values li {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+  margin: auto;
+  display: block;
+}
+
+/* SLIDER */
+
+.container {
+  display: flex;
+  height: 80vh;
+  margin-top: 30vh;
+  position: relative;
+  /*! left: 10rem; */
+}
+
+/* fix container */
+.caroussel-wrapper {
+  position: absolute;
+  top: -10vh;
+  height: 100vh;
+}
+/* fix container */
+
+.caroussel-container {
+  width: 800px;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 25%;
+}
+
+.box {
+  width: 100%;
+  height: 95vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transform: translate3d(0, -100%, 0);
+  animation: slide 15s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box > span {
+  font-size: 5rem;
+}
+
+/* Apply background and delay on boxes */
+.box:first-child {
+  background: #1c1c7c;
+  animation-delay: 9s;
+}
+.box:nth-child(2) {
+  background: #272797;
+  animation-delay: 6s;
+}
+.box:nth-child(3) {
+  background: #4040c0;
+  animation-delay: 3s;
+}
+.box:last-child {
+  background: #6767e1;
+  animation-delay: 0s;
+}
+
+/* Create animation */
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100vh);
+  }
+}

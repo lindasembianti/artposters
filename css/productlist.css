@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&family=Quicksand&display=swap");
+
+img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+section {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.posters {
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  padding: 12%;
+  max-height: 370px;
+}
+
+section {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+h1 {
+  font-family: "Chonburi", cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+/* body general style */
+
+main {
+  margin: 15px;
+}
+
+body {
+  background-color: #f2efe6;
+}
+
+/* nav bar */
+
+li,
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  color: grey;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 5em;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.sociallink {
+  padding-right: 1em;
+  zoom: 2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.socialig {
+  zoom: 2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.links {
+  margin-right: 5em;
+}
+
+.popup_product {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  max-width: 800px;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #f2efe6;
+  border-radius: 5px;
+  padding: 50px;
+}
+
+.content img {
+  max-width: 90%;
+  height: 90%;
+  align-self: center;
+}
+
+.product_description {
+  margin: 30px;
+  margin-left: 50px;
+  min-width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+a:hover {
+  color: black;
+}
+
+.kryds {
+  position: absolute;
+  top: 90px;
+  left: 1080px;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #f2efe6;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 200px;
+  }
+
+  .content img {
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+  }
+}
