@@ -232,7 +232,8 @@ p {
   height: 375px;
   background-color: black;
   white-space: nowrap;
-  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 .events-slider {
   margin: 15% auto 5% auto;
@@ -342,3 +343,13 @@ input[type="submit"]:hover {
 footer {
   align-content: center;
 }
+
+/* from big screen + inspect */
+/* when it get small, remove margin from the main */
+
+/* smaller 
+main - css - margin 
+
+when too small you go to grid
+instead of grid-flexbox (wraps around itself)
+change classes*/
