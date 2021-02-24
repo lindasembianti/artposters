@@ -94,12 +94,14 @@ h2 {
   font-size: 40px;
 }
 
+p {
+  font-size: 20px;
+}
 /* mission */
 .mission h2 {
   grid-row: 2 / span 1;
   grid-column: 1 / span 3;
-  z-index: 1;
-  margin: auto;
+  justify-self: center;
 }
 .mission img {
   width: 70%;
@@ -111,16 +113,16 @@ h2 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
-  margin: 0 auto 150px auto;
+  margin: 5% auto 15% auto;
 }
 .mission p {
   grid-row: 4 / span 2;
   grid-column: 1 / span 2;
   z-index: 2;
   text-align: right;
-  padding: 2rem;
-  margin: -10% -5% auto auto;
-  width: 70%;
+  padding: 5rem;
+  margin: -10% -15% auto auto;
+  width: 80%;
 }
 .mission li:nth-child(4) {
   grid-row: 4 / span 2;
@@ -132,12 +134,14 @@ h2 {
   grid-row: 1 / span 3;
   grid-column: 4 / span 2;
   z-index: 2;
-  margin-right: -5%;
+  min-width: 120%;
+  margin-left: -5%;
+  margin-bottom: -10%;
 }
 
 /* vision */
 .vision img {
-  width: 70%;
+  width: 90%;
   margin: auto;
   display: block;
 }
@@ -147,22 +151,22 @@ h2 {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 0px;
   padding: 2rem;
-  margin: 150px auto 150px auto;
+  margin: 15% auto 10% auto;
 }
 .vision h2 {
   grid-row: 1 / span 1;
   grid-column: 4 / span 2;
-  z-index: 1;
+  align-self: end;
+  justify-self: center;
 }
 
 .vision p {
   grid-row: 2 / span 1;
   grid-column: 4 / span 2;
-  z-index: 2;
-  text-justify: left;
-  width: 100%;
+  width: 80%;
   margin: auto;
-  padding-top: 20%;
+  align-self: center;
+  text-justify: center;
 }
 .vision li:nth-child(3) {
   grid-row: 1 / span 2;
@@ -173,118 +177,168 @@ h2 {
   grid-column: 2 / span 2;
   margin-left: -10%;
   z-index: 2;
+  align-self: center;
+  min-width: 110%;
 }
 
 /* values */
 .community h2 {
   text-align: center;
-  margin: 0px;
+  margin: 3%;
 }
 .values img {
-  width: 90%;
+  width: 70%;
   margin: auto;
   display: block;
+  align-self: center;
 }
 .values {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 50px;
-  margin: auto;
+  grid-column-gap: 30px;
   margin: 0px auto 150px auto;
 }
 .values-container p h3 {
   grid-row: 1 / span 2;
   grid-column: 1 / span 1;
-  z-index: 2;
   margin: auto;
   text-justify: right;
-  padding: 2rem;
   max-width: 80%;
 }
 
 .values-container h3 {
   text-align: right;
-  margin: 4rem 0rem 2rem auto;
+  margin: 2rem 0rem 2rem auto;
 }
 .values-container p {
   text-align: right;
 }
 .values li {
-  grid-row: 1 / span 2;
+  grid-row: 1 / span 1;
   grid-column: 2 / span 1;
+  align-self: center;
+}
+
+/* more info */
+
+.more-info h2 {
+  margin: 15% auto 5% auto;
+}
+
+/* events slider */
+#carousel {
+  width: 100%;
+  height: 375px;
+  background-color: black;
+  white-space: nowrap;
+  overflow: auto;
+}
+.events-slider {
+  margin: 15% auto 5% auto;
+}
+
+.slide img {
+  width: 960px;
+  height: 365px;
+}
+#carousel .slide {
+  display: inline-block;
+}
+
+/* newsletter */
+form {
+  font-family: Arial;
+  margin-top: 15%;
+}
+
+.container-2 {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
   margin: auto;
   display: block;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+.container-2 h2 {
+  text-align: center;
+  margin: 10%;
 }
 
-/* SLIDER */
-
-.container {
-  display: flex;
-  height: 80vh;
-  margin-top: 30vh;
-  position: relative;
-  /*! left: 10rem; */
-}
-
-/* fix container */
-.caroussel-wrapper {
-  position: absolute;
-  top: -10vh;
-  height: 100vh;
-}
-/* fix container */
-
-.caroussel-container {
-  width: 800px;
-  height: 900px;
-  overflow: hidden;
-  position: relative;
-  margin-left: 25%;
-}
-
-.box {
+input[type="text"],
+input[type="submit"] {
   width: 100%;
-  height: 95vh;
+  padding: 12px;
+  margin: 9px auto;
+  display: inline-block;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+input[type="checkbox"] {
+  margin-top: 30px;
+}
+
+input[type="submit"] {
+  background-color: #9a89fe;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/* footer */
+.footer-basic {
+  padding: 20px 0;
+  background-color: #f2efe6;
+  border-top: black 3px solid;
+  color: #4b4c4d;
   position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  transform: translate3d(0, -100%, 0);
-  animation: slide 15s linear infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* bottom: -15em; */
+  width: 100%;
 }
 
-.box > span {
-  font-size: 5rem;
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: px;
 }
 
-/* Apply background and delay on boxes */
-.box:first-child {
-  background: #1c1c7c;
-  animation-delay: 9s;
-}
-.box:nth-child(2) {
-  background: #272797;
-  animation-delay: 6s;
-}
-.box:nth-child(3) {
-  background: #4040c0;
-  animation-delay: 3s;
-}
-.box:last-child {
-  background: #6767e1;
-  animation-delay: 0s;
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
 }
 
-/* Create animation */
-@keyframes slide {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100vh);
-  }
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.love {
+  text-align: center;
+}
+
+footer {
+  align-content: center;
 }
