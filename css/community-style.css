@@ -232,7 +232,8 @@ p {
   height: 375px;
   background-color: black;
   white-space: nowrap;
-  overflow: auto;
+  overflow-y: hidden;
+  overflow-x: scroll;
 }
 .events-slider {
   margin: 15% auto 5% auto;
@@ -341,4 +342,73 @@ input[type="submit"]:hover {
 
 footer {
   align-content: center;
+}
+
+/* media queries */
+/* from big screen + inspect */
+/* when it get small, remove margin from the main */
+
+/* smaller 
+main - css - margin 
+
+when too small you go to grid
+instead of grid-flexbox (wraps around itself)
+change classes*/
+
+@media only screen and (max-width: 1000px) {
+  .mission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+  }
+  .mission p {
+    text-align: left;
+    margin: 0px;
+  }
+  .mission img {
+    max-width: 500px;
+    z-index: 0;
+  }
+  .mission li:nth-child(4) {
+    margin: 20% auto 0 auto;
+  }
+
+  .vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20% auto;
+  }
+  .vision p {
+    text-align: left;
+    margin: 10%;
+  }
+  .vision img {
+    max-width: 500px;
+    z-index: 0;
+    margin: 10% auto;
+  }
+  .values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .values h3 {
+    font-size: 25px;
+  }
+  .values p {
+    text-align: left;
+    margin: 0px;
+  }
+  .values img {
+    max-width: 500px;
+    z-index: 0;
+    margin: 20% auto 10% auto;
+  }
+  .events-slider {
+    min-width: 100%;
+    margin: 20% auto;
+  }
 }
