@@ -92,6 +92,11 @@ header {
 .logo {
   cursor: pointer;
   margin-right: 5em;
+  text-transform: none;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .nav_links {
@@ -104,10 +109,6 @@ header {
 
 .nav_links li a {
   transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover {
-  color: black;
 }
 
 .sociallink {
@@ -209,7 +210,6 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
-
 }
 
 .color_color3 {
@@ -219,8 +219,6 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
-
-  
 }
 
 /* artist 2 */
@@ -291,7 +289,6 @@ header {
 
   background: rgb(0, 47, 255);
 
-
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -306,7 +303,6 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
-
 }
 
 .color_color6 {
@@ -317,7 +313,6 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
-
 }
 
 /* artist 3 */
@@ -383,7 +378,6 @@ header {
   display: flex;
 }
 
-
 .color_color7 {
   justify-content: flex-start;
   background: rgb(171, 226, 228);
@@ -393,7 +387,6 @@ header {
   height: 60px;
   margin-left: 5.5rem;
 }
-
 
 .color_color8 {
   justify-content: flex-end;
@@ -566,7 +559,6 @@ header {
   display: flex;
 }
 
-
 .color_color10 {
   justify-content: flex-start;
   background: rgb(255, 247, 203);
@@ -576,7 +568,6 @@ header {
   height: 60px;
   margin-left: 5.5rem;
 }
-
 
 .color_color11 {
   justify-content: flex-end;
@@ -669,7 +660,6 @@ header {
   margin-left: 5.5rem;
 }
 
-
 .color_color14 {
   justify-content: flex-end;
   background: rgb(178, 24, 209);
@@ -686,13 +676,11 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
-
 }
 
 /* artist 7 */
 
 #artist7 {
-
   background-color: #fffff8;
 
   display: grid;
@@ -709,7 +697,6 @@ header {
 
 .ph7 {
   grid-area: ph7;
-
 }
 
 .name7 {
@@ -813,6 +800,26 @@ header {
 #artist4:hover,
 #artist6:hover {
   animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, 0.5);
+}
+.gotopbtn:hover {
+  -webkit-animation: none;
 }
 
 /*footer*/

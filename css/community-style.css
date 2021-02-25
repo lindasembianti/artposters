@@ -29,14 +29,20 @@ main {
 body {
   background-color: #f2efe6;
 }
+
 /* nav bar */
 
 li,
 a {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: grey;
+  font-size: 13px;
+  color: black;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -44,11 +50,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 -0.5em 0 -0.5em;
+  border-bottom: black solid 2px;
 }
 
 .logo {
   cursor: pointer;
   margin-right: 5em;
+  text-transform: none;
+}
+
+.logo:hover {
+  text-decoration: none;
 }
 
 .nav_links {
@@ -63,19 +77,15 @@ header {
   transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
-  color: #0088a9;
-}
-
 .sociallink {
   padding-right: 1em;
-  zoom: 2;
+  zoom: 1;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
 
 .socialig {
-  zoom: 2;
+  zoom: 1;
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
@@ -293,6 +303,26 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   opacity: 0.8;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, 0.5);
+}
+.gotopbtn:hover {
+  -webkit-animation: none;
 }
 
 /* footer */
