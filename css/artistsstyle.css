@@ -822,44 +822,45 @@ header {
   -webkit-animation: none;
 }
 
-/* footer */
+/*footer*/
 .footer-basic {
-  padding: 20px 0;
-  background-color: #f2efe6;
-  border-top: black 3px solid;
-  color: #4b4c4d;
-  position: absolute;
-  /* bottom: -15em; */
+  padding: 60px 0;
+  background-color: #a3b9ff;
+  border-top: black 2px solid;
+  color: black;
+  bottom: -15em;
   width: 100%;
+  margin: 0 -0.5em -0.5em -0.5em;
+  margin-right: -0.5em;
 }
 
-.footer-basic .social {
-  text-align: center;
-  padding-bottom: px;
+.nav_footer {
+  justify-content: space-around;
 }
 
-.footer-basic .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
+.logo_footer {
+  justify-content: space-around;
+  margin-left: 15.1em;
+  font-size: 2em;
 }
 
-.footer-basic .social > a:hover {
-  opacity: 0.9;
+.links_footer {
+  justify-content: space-around;
+  margin-left: 35em;
+  margin-top: 3em;
 }
+
+.nav_links_footer {
+  list-style: none;
+  line-height: 2em;
+  margin-left: 10em;
+}
+
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: black;
   margin-bottom: 0;
 }
 
@@ -867,6 +868,6 @@ header {
   text-align: center;
 }
 
-footer {
-  align-content: center;
+.footer_linda {
+  display: flex;
 }

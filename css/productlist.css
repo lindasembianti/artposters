@@ -84,9 +84,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:active {
-}
-
 header {
   display: flex;
   justify-content: space-between;
