@@ -52,7 +52,9 @@ body {
 main {
   margin: 5vw 20vw 5vw 20vw;
   display: grid;
-  grid-template-rows: 50px 370px 370px 370px 370px 370px 370px 370px;
+
+  grid-template-rows: 370px 370px 370px 370px 370px 370px 370px;
+
   row-gap: 100px;
 }
 
@@ -67,9 +69,14 @@ img {
 li,
 a {
   font-family: "Quicksand", sans-serif;
-  font-size: 16px;
-  color: grey;
+  font-size: 13px;
+  color: black;
   text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 header {
@@ -77,6 +84,9 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 -0.5em 0 -0.5em;
+  border-bottom: black solid 2px;
 }
 
 .logo {
@@ -120,6 +130,7 @@ header {
 /* artist 1 */
 
 #artist1 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -181,7 +192,9 @@ header {
 
 .color_color1 {
   justify-content: flex-start;
-  background: cadetblue;
+
+  background: rgb(253, 189, 255);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -190,25 +203,30 @@ header {
 
 .color_color2 {
   justify-content: flex-end;
-  background: yellowgreen;
+
+  background: rgb(102, 176, 245);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
 }
 
 .color_color3 {
   justify-content: flex-end;
-  background: violet;
+  background: rgb(253, 239, 155);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
+  
 }
 
 /* artist 2 */
 
 #artist2 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -270,7 +288,10 @@ header {
 
 .color_color4 {
   justify-content: flex-start;
-  background: cadetblue;
+
+  background: rgb(0, 47, 255);
+
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -279,25 +300,30 @@ header {
 
 .color_color5 {
   justify-content: flex-end;
-  background: yellowgreen;
+
+  background: rgb(255, 238, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
 }
 
 .color_color6 {
   justify-content: flex-end;
-  background: violet;
+
+  background: rgb(255, 0, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
 }
 
 /* artist 3 */
 
 #artist3 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -357,36 +383,40 @@ header {
   display: flex;
 }
 
-.color_color10 {
+
+.color_color7 {
   justify-content: flex-start;
-  background: cadetblue;
+  background: rgb(171, 226, 228);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
 
-.color_color11 {
+
+.color_color8 {
   justify-content: flex-end;
-  background: yellowgreen;
+  background: rgb(154, 207, 138);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
-.color_color12 {
+.color_color9 {
   justify-content: flex-end;
-  background: violet;
+  background: rgb(186, 170, 223);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
 /* artist 4 */
 
 #artist4 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -476,6 +506,7 @@ header {
 /* artist 5 */
 
 #artist5 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -535,36 +566,40 @@ header {
   display: flex;
 }
 
-.color_color16 {
+
+.color_color10 {
   justify-content: flex-start;
-  background: cadetblue;
+  background: rgb(255, 247, 203);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
 
-.color_color17 {
+
+.color_color11 {
   justify-content: flex-end;
-  background: yellowgreen;
+  background: rgb(255, 130, 46);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
-.color_color18 {
+.color_color12 {
   justify-content: flex-end;
-  background: violet;
+  background: rgb(184, 244, 255);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
 /* artist 6 */
 
 #artist6 {
+  background-color: #fffff8;
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -624,36 +659,42 @@ header {
   display: flex;
 }
 
-.color_color19 {
+.color_color13 {
   justify-content: flex-start;
-  background: cadetblue;
+  background: rgb(247, 183, 255);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
 
-.color_color20 {
+
+.color_color14 {
   justify-content: flex-end;
-  background: yellowgreen;
+  background: rgb(178, 24, 209);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
-.color_color21 {
+.color_color15 {
   justify-content: flex-end;
-  background: violet;
+  background: rgb(185, 255, 246);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
 }
 
 /* artist 7 */
 
 #artist7 {
+
+  background-color: #fffff8;
+
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -668,6 +709,7 @@ header {
 
 .ph7 {
   grid-area: ph7;
+
 }
 
 .name7 {
@@ -713,72 +755,105 @@ header {
   display: flex;
 }
 
-.color_color22 {
+.color_color16 {
   justify-content: flex-start;
-  background: cadetblue;
+  background: rgb(255, 253, 151);
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
 
-.color_color23 {
+.color_color17 {
   justify-content: flex-end;
   background: yellowgreen;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
 }
 
-.color_color24 {
+.color_color18 {
   justify-content: flex-end;
-  background: violet;
+  background: rgb(139, 157, 255);
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+}
+
+/* hover animations& */
+
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200px);
+  }
+}
+
+#artist1:hover,
+#artist3:hover,
+#artist5:hover,
+#artist7:hover {
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+#artist2:hover,
+#artist4:hover,
+#artist6:hover {
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 /*footer*/
 .footer-basic {
-  padding: 20px 0;
-  background-color: #f2efe6;
-  border-top: black 3px solid;
-
-  color: #4b4c4d;
+  padding: 60px 0;
+  background-color: #a3b9ff;
+  border-top: black 2px solid;
+  color: black;
   bottom: -15em;
   width: 100%;
+  margin: 0 -0.5em -0.5em -0.5em;
+  margin-right: -0.5em;
 }
 
-.footer-basic .social {
-  text-align: center;
-  padding-bottom: px;
+.nav_footer {
+  justify-content: space-around;
 }
 
-.footer-basic .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
+.logo_footer {
+  justify-content: space-around;
+  margin-left: 15.1em;
+  font-size: 2em;
 }
 
-.footer-basic .social > a:hover {
-  opacity: 0.9;
+.links_footer {
+  justify-content: space-around;
+  margin-left: 35em;
+  margin-top: 3em;
+}
+
+.nav_links_footer {
+  list-style: none;
+  line-height: 2em;
+  margin-left: 10em;
 }
 
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
   font-size: 13px;
-  color: #aaa;
+  color: black;
   margin-bottom: 0;
 }
 
@@ -786,9 +861,6 @@ header {
   text-align: center;
 }
 
-footer {
-  align-content: center;
-}
-
-@media screen and (max-width: 800px) {
+.footer_linda {
+  display: flex;
 }
