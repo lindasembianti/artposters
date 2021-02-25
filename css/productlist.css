@@ -84,6 +84,9 @@ a:hover {
   text-decoration: underline;
 }
 
+a:active {
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -169,10 +172,6 @@ header {
 
 .hidden {
   display: none;
-}
-
-a:hover {
-  color: black;
 }
 
 .kryds {
