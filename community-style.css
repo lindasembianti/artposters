@@ -1,0 +1,450 @@
+/* fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chonburi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+
+/* typography */
+h1 {
+  font-family: "Chonburi", cursive;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+/* BODY GENERAL STYLE */
+
+main {
+  margin: 15px;
+}
+
+body {
+  background-color: #f2efe6;
+}
+
+/* nav bar */
+
+li,
+a {
+  font-family: "Quicksand", sans-serif;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 0 -0.5em 0 -0.5em;
+  border-bottom: black solid 2px;
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: 5em;
+  text-transform: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.sociallink {
+  padding-right: 1em;
+  zoom: 1;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.socialig {
+  zoom: 1;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.links {
+  margin-right: 5em;
+}
+
+/* COMMUNITY */
+
+/* mission */
+.mission h2 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 3;
+  justify-self: center;
+  padding: 0 5rem 0 2rem;
+}
+
+.mission img {
+  width: 60%;
+  display: block;
+  border: black solid 2px;
+}
+
+.mission {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 5% auto 15% auto;
+}
+
+.mission p {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+  z-index: 2;
+  text-align: left;
+  padding: 2rem;
+  margin: -10% -15% auto auto;
+  width: 80%;
+}
+.mission li:nth-child(4) {
+  grid-row: 4 / span 2;
+  grid-column: 3 / span 2;
+  margin-top: -17%;
+}
+
+.mission li:nth-child(3) {
+  grid-row: 1 / span 3;
+  grid-column: 4 / span 2;
+  z-index: 2;
+  min-width: 120%;
+  margin-left: -5%;
+  margin-bottom: -10%;
+}
+
+/* vision */
+.vision img {
+  width: 70%;
+  margin: 0 0 0 10rem;
+  display: block;
+  border: black solid 2px;
+}
+.vision {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 2rem;
+  margin: -5% auto 10% auto;
+}
+.vision h2 {
+  grid-row: 1 / span 1;
+  grid-column: 4 / span 2;
+  align-self: end;
+  justify-self: center;
+}
+
+.vision p {
+  grid-row: 2 / span 3;
+  grid-column: 4 / span 2;
+  width: 80%;
+  margin: 4rem;
+  text-justify: center;
+}
+
+.vision li:nth-child(3) {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+}
+
+.vision li:nth-child(4) {
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 2;
+  margin-left: -10%;
+  z-index: 2;
+  align-self: center;
+  min-width: 110%;
+}
+
+/* values */
+.community h2 {
+  text-align: center;
+  margin: 3%;
+}
+.values img {
+  width: 60%;
+  margin: 2rem auto;
+  display: block;
+  align-self: center;
+  border: black solid 2px;
+}
+.values {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin: 0px auto 150px 150px;
+}
+.values-container p h3 {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  margin: auto;
+  text-justify: right;
+  max-width: 60%;
+}
+
+.values-container h3 {
+  text-align: right;
+  margin: 2rem 0rem 2rem auto;
+}
+.values-container p {
+  text-align: right;
+}
+.values li {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  align-self: center;
+}
+
+/* more info */
+
+.more-info h2 {
+  margin: 0 auto 5% auto;
+}
+
+.more-info p {
+  text-align: center;
+  margin: -3rem 12rem 5rem;
+}
+
+.git {
+  text-align: center;
+  margin: 4rem 12rem 5rem;
+}
+
+/* events slider */
+#carousel {
+  width: 100%;
+  height: 375px;
+  background-color: black;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.events-slider {
+  margin: 10% auto 5% auto;
+}
+
+.slide img {
+  width: 960px;
+  height: 365px;
+  margin-right: 10px;
+}
+#carousel .slide {
+  display: inline-block;
+}
+
+/* newsletter */
+form {
+  font-family: Arial;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.container-2 {
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  margin: auto;
+  display: block;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.2);
+}
+.container-2 h2 {
+  text-align: center;
+  margin: 10%;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 9px auto;
+  display: inline-block;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+}
+
+input[type="checkbox"] {
+  margin-top: 30px;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 100%;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: black;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 rgba(#5a99d4, 0.5);
+}
+.gotopbtn:hover {
+  -webkit-animation: none;
+}
+
+/* footer */
+.footer-basic {
+  padding: 20px 0;
+  background-color: #f2efe6;
+  border-top: black 3px solid;
+  color: #4b4c4d;
+  position: absolute;
+  /* bottom: -15em; */
+  width: 100%;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
+
+.love {
+  text-align: center;
+}
+
+footer {
+  align-content: center;
+}
+
+/* media queries */
+/* from big screen + inspect */
+/* when it get small, remove margin from the main */
+
+/* smaller 
+main - css - margin 
+
+when too small you go to grid
+instead of grid-flexbox (wraps around itself)
+change classes*/
+
+@media only screen and (max-width: 1000px) {
+  .mission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px;
+  }
+  .mission p {
+    text-align: left;
+    margin: 0px;
+  }
+  .mission img {
+    max-width: 500px;
+    z-index: 0;
+  }
+  .mission li:nth-child(4) {
+    margin: 20% auto 0 auto;
+  }
+
+  .vision {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20% auto;
+  }
+  .vision p {
+    text-align: left;
+    margin: 10%;
+  }
+  .vision img {
+    max-width: 500px;
+    z-index: 0;
+    margin: 10% auto;
+  }
+  .values {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .values h3 {
+    font-size: 25px;
+  }
+  .values p {
+    text-align: left;
+    margin: 0px;
+  }
+  .values img {
+    max-width: 500px;
+    z-index: 0;
+    margin: 20% auto 10% auto;
+  }
+  .events-slider {
+    min-width: 100%;
+    margin: 20% auto;
+  }
+}
