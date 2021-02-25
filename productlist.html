@@ -4,11 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chonburi&family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a3d19315f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/productlist.css" />
     <title>Product list page</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="productlist.html">Posters</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"><h1 class="logo" src="" alt="logo">Plakat</h1></a>
+      <div class="links">
+        <a class="sociallink" href="#"> <i class="fab fa-linkedin"></i></a>
+        <a class="socialig" href="#">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section>
+        <template id="postertemplate">
+          <article class="posters">
+            <div class="img_wrapper">
+              <img
+                class="productimage"
+                src="img/poster_example.jpg"
+                alt="Descripton here"
+              />
+            </div>
+
+            <h4 class="artistname">Artist Name</h4>
+          </article>
+        </template>
+      </section>
+
+      <div class="popup_product hidden">
+        <div class="content">
+          <img src="img/poster_example.jpg" alt="Descripton here" />
+          <div class="product_description">
+            <h2 class="postername">Title</h2>
+            <h3 class="artistname2">Artist</h3>
+            <p class="style">Artist</p>
+            <a href="artists.html" class="artistlink"
+              >Learn more about the artists</a
+            >
+            <h2 class="kryds">X</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#"><i class="fab fa-instagram"></i></a
+          ><a href="#"><i class="fab fa-snapchat"></i></a
+          ><a href="#"><i class="fab fa-twitter"></i></a
+          ><a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <p class="love">Made with love ❣</p>
+        <p class="copyright">Plakat © 2021</p>
+      </footer>
+    </div>
+    <script src="productlist.js"></script>
   </body>
 </html>
