@@ -23,6 +23,10 @@ section {
   height: auto;
 }
 
+.posters:hover {
+  transform: scale(1.01);
+}
+
 section {
   border-top: 2px solid black;
   border-right: 2px solid black;
