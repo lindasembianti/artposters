@@ -52,7 +52,9 @@ body {
 main {
   margin: 5vw 20vw 5vw 20vw;
   display: grid;
+
   grid-template-rows: 370px 370px 370px 370px 370px 370px 370px;
+
   row-gap: 100px;
 }
 
@@ -190,7 +192,9 @@ header {
 
 .color_color1 {
   justify-content: flex-start;
+
   background: rgb(253, 189, 255);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -199,11 +203,13 @@ header {
 
 .color_color2 {
   justify-content: flex-end;
+
   background: rgb(102, 176, 245);
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
+
 }
 
 .color_color3 {
@@ -213,6 +219,8 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
+
+  
 }
 
 /* artist 2 */
@@ -280,7 +288,10 @@ header {
 
 .color_color4 {
   justify-content: flex-start;
+
   background: rgb(0, 47, 255);
+
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -289,20 +300,24 @@ header {
 
 .color_color5 {
   justify-content: flex-end;
+
   background: rgb(255, 238, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
+
 }
 
 .color_color6 {
   justify-content: flex-end;
+
   background: rgb(255, 0, 0);
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
+
 }
 
 /* artist 3 */
@@ -368,14 +383,17 @@ header {
   display: flex;
 }
 
+
 .color_color7 {
   justify-content: flex-start;
   background: rgb(171, 226, 228);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
+
 
 .color_color8 {
   justify-content: flex-end;
@@ -548,14 +566,17 @@ header {
   display: flex;
 }
 
+
 .color_color10 {
   justify-content: flex-start;
   background: rgb(255, 247, 203);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
+
 
 .color_color11 {
   justify-content: flex-end;
@@ -641,11 +662,13 @@ header {
 .color_color13 {
   justify-content: flex-start;
   background: rgb(247, 183, 255);
+
   border-radius: 50%;
   width: 60px;
   height: 60px;
   margin-left: 5.5rem;
 }
+
 
 .color_color14 {
   justify-content: flex-end;
@@ -663,12 +686,15 @@ header {
   width: 60px;
   height: 60px;
   margin-left: -0.5rem;
+
 }
 
 /* artist 7 */
 
 #artist7 {
+
   background-color: #fffff8;
+
   display: grid;
   grid-template-columns: 250px 400px auto;
   grid-template-rows: 80px 50px 120px 70px 50px;
@@ -683,6 +709,7 @@ header {
 
 .ph7 {
   grid-area: ph7;
+
 }
 
 .name7 {
